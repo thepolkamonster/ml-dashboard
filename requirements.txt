@@ -1,0 +1,6 @@
+Flask
+Flask-Smorest
+python-dotenv
+Flask-Sqlalchemy
+Flask-Migrate
+requests

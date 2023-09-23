@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_smorest import Api
+from views.routes import blp as RoutesBlueprint
 
 def create_app():
     app = Flask(__name__)
@@ -16,5 +17,6 @@ def create_app():
     # app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
     api = Api(app)
+    api.register_blueprint(RoutesBlueprint)
     return app
 

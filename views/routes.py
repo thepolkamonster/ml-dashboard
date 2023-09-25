@@ -9,3 +9,6 @@ def index():
 @blp.route("/elements")
 def elements():
     return render_template('elements.html')
+@blp.route("/sample")
+def sample():
+    return render_template("sample.html")
